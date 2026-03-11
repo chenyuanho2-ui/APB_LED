@@ -1,0 +1,28 @@
+[
+ {
+  "InstFile" : "D:/AWORK/04_Archives/SOFT/fpga/tangnano4k/APB_LED/src/top.v.v",
+  "InstLine" : 1,
+  "InstName" : "top",
+  "ModuleFile" : "D:/AWORK/04_Archives/SOFT/fpga/tangnano4k/APB_LED/src/top.v.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "D:/AWORK/04_Archives/SOFT/fpga/tangnano4k/APB_LED/src/top.v.v",
+    "InstLine" : 22,
+    "InstName" : "your_m3_inst",
+    "ModuleFile" : "D:/AWORK/04_Archives/SOFT/fpga/tangnano4k/APB_LED/src/gowin_empu/gowin_empu.v",
+    "ModuleLine" : 9,
+    "ModuleName" : "Gowin_EMPU_Top"
+   },
+   {
+    "InstFile" : "D:/AWORK/04_Archives/SOFT/fpga/tangnano4k/APB_LED/src/top.v.v",
+    "InstLine" : 44,
+    "InstName" : "your_led_ctrl_inst",
+    "ModuleFile" : "D:/AWORK/04_Archives/SOFT/fpga/tangnano4k/APB_LED/src/apb_led_controller.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "apb_led_controller"
+   }
+  ]
+ }
+]

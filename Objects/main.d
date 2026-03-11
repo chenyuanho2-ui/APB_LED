@@ -1,0 +1,16 @@
+.\objects\main.o: MCU_Project\main.c
+.\objects\main.o: MCU_Project\gw1ns4c.h
+.\objects\main.o: MCU_Project\core_cm3.h
+.\objects\main.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\main.o: MCU_Project\system_gw1ns4c.h
+.\objects\main.o: MCU_Project\gw1ns4c_conf.h
+.\objects\main.o: MCU_Project\gw1ns4c_gpio.h
+.\objects\main.o: MCU_Project\gw1ns4c.h
+.\objects\main.o: MCU_Project\gw1ns4c_wdog.h
+.\objects\main.o: MCU_Project\gw1ns4c_uart.h
+.\objects\main.o: MCU_Project\gw1ns4c_timer.h
+.\objects\main.o: MCU_Project\gw1ns4c_spi.h
+.\objects\main.o: MCU_Project\gw1ns4c_i2c.h
+.\objects\main.o: MCU_Project\gw1ns4c_misc.h
+.\objects\main.o: MCU_Project\gw1ns4c_syscon.h
+.\objects\main.o: MCU_Project\gw1ns4c_rtc.h
