@@ -24,7 +24,7 @@ module apb_led_controller (
     
     // 将寄存器的低4位直接输出给 LED 物理引脚
     // Tang Nano 4K 的 LED 通常是低电平点亮，这里做了个按位取反
-    assign led_out = ~led_reg[3:0];
+    assign led_out = led_reg[3:0];
 
     // APB 写逻辑：当 Cortex-M3 向外设写数据时触发
     always @(posedge PCLK or negedge PRESETN) begin

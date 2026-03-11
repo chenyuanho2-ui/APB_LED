@@ -5,11 +5,13 @@
 // 定义控制寄存器指针
 #define LED_DATA_REG (*(volatile uint32_t *)(MY_LED_BASE))
 
-void Delay(uint32_t count) {
+void Delay(volatile uint32_t count) { // 加上 volatile
     while(count--) {
-        __nop(); // 占用 CPU 周期
+        __nop(); 
     }
 }
+
+
 
 int main(void) {
     // 1. 初始化系统（必须在 system_gw1ns4c.c 中设置正确频率）

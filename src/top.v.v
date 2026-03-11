@@ -43,7 +43,7 @@ module top (
     // --- 2. 例化你的自定义 LED 控制器 ---
     apb_led_controller your_led_ctrl_inst (
         .PCLK(master_pclk),               // 使用 EMPU 输出的总线时钟
-        .PRESETN(!master_prst),           // 注意：master_prst 通常是高有效，控制器需要低有效
+        .PRESETN(master_prst),           // 注意：master_prst 通常是高有效，控制器需要低有效
         
         .PADDR({{24{1'b0}}, master_paddr}), // 将 8 位地址补齐到 32 位
         .PSEL(master_psel1),

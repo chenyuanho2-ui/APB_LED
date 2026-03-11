@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="top" Register="15" Lut="62" Bsram="4" T_Register="47(15)" T_Lut="99(62)" T_Bsram="4(4)">
- <SubModule name="your_led_ctrl_inst" Register="32" Lut="37" T_Register="32(32)" T_Lut="37(37)"/>
+<Module name="top" Register="15" Lut="62" Bsram="4" T_Register="47(15)" T_Lut="96(62)" T_Bsram="4(4)">
+ <SubModule name="your_led_ctrl_inst" Register="32" Lut="34" T_Register="32(32)" T_Lut="34(34)"/>
 </Module>

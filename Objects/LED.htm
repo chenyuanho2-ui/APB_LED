@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\LED.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\LED.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060528: Last Updated: Wed Mar 11 21:03:49 2026
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060528: Last Updated: Wed Mar 11 21:38:36 2026
 <BR><P>
 <H3>Maximum Stack Usage =          8 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -273,8 +273,10 @@ Global Symbols
 <P><STRONG><a name="[a]"></a>DebugMon_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, gw1ns4c_it.o(i.DebugMon_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_gw1ns4c.o(RESET)
 </UL>
-<P><STRONG><a name="[42]"></a>Delay</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, main.o(i.Delay))
-<BR><BR>[Called By]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<P><STRONG><a name="[42]"></a>Delay</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, main.o(i.Delay))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = Delay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[5]"></a>HardFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gw1ns4c_it.o(i.HardFault_Handler))
@@ -385,7 +387,9 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> startup_gw1ns4c.o(RESET)
 </UL>
 <P><STRONG><a name="[39]"></a>main</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, main.o(i.main))
-<BR><BR>[Calls]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = main &rArr; Delay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
 <LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay
 </UL>
 <BR>[Called By]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
